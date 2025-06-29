@@ -13,7 +13,52 @@
         android:theme="@style/Theme.EduGood"
         tools:targetApi="31">
         <activity
-            android:name=".indonesia_kelas3"
+            android:name=".MatematikaKelas4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MatematikaKelas3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MatematikaKelas2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MatematikaKelas1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2activity_matematika_kelas1"
+            android:exported="false" />
+        <activity
+            android:name=".MandarinKelas4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MandarinKelas3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MandarinKelas2Acitivity"
+            android:exported="false" />
+        <activity
+            android:name=".MandarinKelas1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".PengingatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TargetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LandingPage"
+            android:exported="false" />
+        <activity
+            android:name=".IndonesiaKelas4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".IndonesiaKelas3Activity"
             android:exported="false" />
         <activity
             android:name=".IndonesiaKelas2Activity"
