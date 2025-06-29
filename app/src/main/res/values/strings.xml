@@ -1,3 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!-- ✅ Nama Aplikasi -->
     <string name="app_name">EduGood</string>
+
+    <!-- ✅ Nama Drawer -->
+    <string name="navigation_drawer_open">Open navigation</string>
+    <string name="navigation_drawer_close">Close navigation</string>
+
+    <!-- ✅ Array Kelas untuk Spinner atau Dropdown -->
+    <string-array name="kelas_array">
+        <item>Kelas 1</item>
+        <item>Kelas 2</item>
+        <item>Kelas 3</item>
+        <item>Kelas 4</item>
+    </string-array>
+
+    <!-- ✅ Judul Menu Drawer (opsional jika pakai header) -->
+    <string name="menu_mandarin">Mandarin</string>
+    <string name="menu_indonesia">Indonesia</string>
+    <string name="menu_matematika">Matematika</string>
+    <string name="menu_target">Target</string>
+    <string name="menu_pengingat">Pengingat</string>
+    <string name="menu_profile">Profil</string>
+    <string name="menu_logout">Keluar</string>
+
 </resources>

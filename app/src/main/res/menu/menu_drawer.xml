@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Materi -->
+    <group android:checkableBehavior="none">
+        <item android:id="@+id/nav_mandarin" android:title="Mandarin" />
+        <item android:id="@+id/nav_matematika" android:title="Matematika" />
+        <item android:id="@+id/nav_indonesia" android:title="Indonesia" />
+    </group>
+
+    <!-- Fitur -->
+    <group android:checkableBehavior="none">
+        <item android:id="@+id/nav_target" android:title="Target Belajar" />
+        <item android:id="@+id/nav_pengingat" android:title="Pengingat" />
+    </group>
+
+    <!-- Akun -->
+    <group android:checkableBehavior="none">
+        <item android:id="@+id/nav_profile" android:title="Profil" />
+        <item android:id="@+id/nav_logout" android:title="Logout" />
+    </group>
+</menu>
