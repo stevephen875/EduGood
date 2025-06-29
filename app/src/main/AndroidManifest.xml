@@ -13,6 +13,18 @@
         android:theme="@style/Theme.EduGood"
         tools:targetApi="31">
         <activity
+            android:name=".indonesia_kelas3"
+            android:exported="false" />
+        <activity
+            android:name=".IndonesiaKelas2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".IndonesiaKelas1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false" />
+        <activity
             android:name=".login"
             android:exported="false" />
         <activity
