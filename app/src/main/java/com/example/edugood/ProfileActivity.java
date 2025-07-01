@@ -66,13 +66,11 @@ public class ProfileActivity extends AppCompatActivity {
                     String namaBaru = inputNama.getText().toString();
                     String phoneBaru = inputPhone.getText().toString();
 
-                    // ✅ 1. Update active_user
                     SharedPreferences.Editor editor = prefs.edit();
                     editor.putString("nama", namaBaru);
                     editor.putString("phone", phoneBaru);
                     editor.apply();
 
-                    // ✅ 2. Update di database utama (users)
                     SharedPreferences allUsers = getSharedPreferences("users", MODE_PRIVATE);
                     String userData = allUsers.getString("data", "[]");
 
@@ -96,7 +94,6 @@ public class ProfileActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
 
-                    // ✅ Refresh tampilan
                     showData();
                 })
                 .setNegativeButton("Batal", null)

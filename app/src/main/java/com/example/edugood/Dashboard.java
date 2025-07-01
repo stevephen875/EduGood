@@ -22,25 +22,20 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dashboard); // sesuai layout XML kamu
+        setContentView(R.layout.activity_dashboard);
 
-        // ✅ Setup Toolbar
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        // ✅ Setup Drawer dan NavigationView
         drawerLayout = findViewById(R.id.drawerLayout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        // ✅ Buka drawer saat hamburger diklik
         toolbar.setNavigationOnClickListener(v -> drawerLayout.openDrawer(GravityCompat.START));
 
-        // ✅ Setup SharedPreferences
         prefs = getSharedPreferences("active_user", MODE_PRIVATE);
         String kelas = prefs.getString("kelas", "Kelas 1");
 
-        // ✅ Gambar pelajaran
         ImageView imgMandarin = findViewById(R.id.imgMandarin);
         ImageView imgIndonesia = findViewById(R.id.imgIndonesia);
         ImageView imgMatematika = findViewById(R.id.imgMatematika);

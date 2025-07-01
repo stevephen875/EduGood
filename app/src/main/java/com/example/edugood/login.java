@@ -42,14 +42,12 @@ public class login extends AppCompatActivity {
                     if (obj.getString("email").equals(emailInput) &&
                             obj.getString("password").equals(passInput)) {
 
-                        // ✅ Simpan user yang sedang login
                         SharedPreferences loginPrefs = getSharedPreferences("active_user", MODE_PRIVATE);
                         SharedPreferences.Editor editor = loginPrefs.edit();
                         editor.putString("email", emailInput);
                         editor.putString("kelas", obj.getString("kelas"));
                         editor.apply();
 
-                        // ✅ Masuk ke Dashboard
                         startActivity(new Intent(this, Dashboard.class));
                         finish();
                         return;
