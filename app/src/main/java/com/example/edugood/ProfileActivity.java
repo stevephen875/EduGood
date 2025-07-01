@@ -85,7 +85,6 @@ public class ProfileActivity extends AppCompatActivity {
                             }
                         }
 
-                        // Simpan ulang data users
                         SharedPreferences.Editor usersEditor = allUsers.edit();
                         usersEditor.putString("data", userArray.toString());
                         usersEditor.apply();
