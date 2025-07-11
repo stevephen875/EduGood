@@ -24,11 +24,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:background="?attr/colorPrimary"
-                android:elevation="4dp"
-                android:title="Dashboard"
                 app:title="EduGood"
                 app:titleTextColor="@android:color/white"
-                android:titleTextColor="@android:color/white"
                 app:navigationIcon="@android:drawable/ic_menu_sort_by_size"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
         </com.google.android.material.appbar.AppBarLayout>
@@ -38,8 +35,7 @@
             android:layout_height="match_parent"
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
             android:padding="24dp"
-            android:background="#FFFFFF"
-            android:clipToPadding="false">
+            android:background="#FFFFFF">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -74,6 +70,7 @@
                             android:layout_height="wrap_content"
                             android:text="Mandarin"
                             android:textStyle="bold"
+                            android:textColor="@color/black"
                             android:textSize="14sp" />
                     </LinearLayout>
 
@@ -96,6 +93,7 @@
                             android:layout_height="wrap_content"
                             android:text="Indonesia"
                             android:textStyle="bold"
+                            android:textColor="@color/black"
                             android:textSize="14sp" />
                     </LinearLayout>
 
@@ -118,6 +116,7 @@
                             android:layout_height="wrap_content"
                             android:text="Matematika"
                             android:textStyle="bold"
+                            android:textColor="@color/black"
                             android:textSize="14sp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -131,5 +130,6 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:background="@android:color/white"
-        app:menu="@menu/menu_drawer" />
+        app:menu="@menu/menu_drawer"
+        app:itemTextColor="@color/black" />
 </androidx.drawerlayout.widget.DrawerLayout>

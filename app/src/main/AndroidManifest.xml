@@ -1,82 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.edugood" >
+    package="com.example.edugood">
 
     <application
         android:allowBackup="true"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.EduGood" >
-        <activity
-            android:name=".ui.theme.Materi1IndonesiaKelas1"
-            android:exported="false" />
-        <!-- Splash screen sebagai launcher utama -->
+        android:theme="@style/Theme.EduGood">
+
+        <!-- 🌟 Launcher -->
         <activity
             android:name=".SplashActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- Halaman Utama -->
-        <activity
-            android:name=".Dashboard"
-            android:exported="false" /> <!-- Autentikasi -->
-        <activity
-            android:name=".login"
-            android:exported="false" />
-        <activity
-            android:name=".register"
-            android:exported="false" />
-        <activity
-            android:name=".LandingPage"
-            android:exported="false" /> <!-- Kelas Mandarin -->
-        <activity
-            android:name=".MandarinKelas1Activity"
-            android:exported="false" />
-        <activity
-            android:name=".MandarinKelas2Activity"
-            android:exported="false" />
-        <activity
-            android:name=".MandarinKelas3Activity"
-            android:exported="false" />
-        <activity
-            android:name=".MandarinKelas4Activity"
-            android:exported="false" /> <!-- Kelas Indonesia -->
-        <activity
-            android:name=".IndonesiaKelas1Activity"
-            android:exported="false" />
-        <activity
-            android:name=".IndonesiaKelas2Activity"
-            android:exported="false" />
-        <activity
-            android:name=".IndonesiaKelas3Activity"
-            android:exported="false" />
-        <activity
-            android:name=".IndonesiaKelas4Activity"
-            android:exported="false" /> <!-- Kelas Matematika -->
-        <activity
-            android:name=".MatematikaKelas1Activity"
-            android:exported="false" />
-        <activity
-            android:name=".MatematikaKelas2Activity"
-            android:exported="false" />
-        <activity
-            android:name=".MatematikaKelas3Activity"
-            android:exported="false" />
-        <activity
-            android:name=".MatematikaKelas4Activity"
-            android:exported="false" /> <!-- Tambahan dari Drawer -->
-        <activity
-            android:name=".TargetActivity"
-            android:exported="false" />
-        <activity
-            android:name=".PengingatActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ProfileActivity"
-            android:exported="false" />
+        </activity>
+
+        <!-- 🏠 Dashboard -->
+        <activity android:name=".Dashboard" android:exported="false" />
+
+        <!-- 🔐 Autentikasi -->
+        <activity android:name=".login" android:exported="false" />
+        <activity android:name=".register" android:exported="false" />
+
+        <!-- 📄 Landing Page -->
+        <activity android:name=".LandingPage" android:exported="false" />
+
+        <!-- 📘 Matematika -->
+        <activity android:name=".MatematikaKelas1Activity" android:exported="false" />
+        <activity android:name=".MatematikaKelas2Activity" android:exported="false" />
+        <activity android:name=".MatematikaKelas3Activity" android:exported="false" />
+        <activity android:name=".MatematikaKelas4Activity" android:exported="false" />
+        <activity android:name=".MatematikaMateri1Activity" android:exported="false" />
+        <activity android:name=".MatematikaQuiz1Activity" android:exported="false" />
+
+        <!-- (Optional jika kamu pakai nama class seperti ini) -->
+        <activity android:name=".MatematikaKelas1Activity" android:exported="false" />
+        <activity android:name=".MatematikaMateri1Activity" android:exported="false" />
+        <activity android:name=".MatematikaQuiz1Activity" android:exported="false" />
+
+
+        <!-- 🈴 Mandarin -->
+        <activity android:name=".MandarinKelas1Activity" android:exported="false" />
+        <activity android:name=".MandarinKelas2Activity" android:exported="false" />
+        <activity android:name=".MandarinKelas3Activity" android:exported="false" />
+        <activity android:name=".MandarinKelas4Activity" android:exported="false" />
+
+        <!-- 🇮🇩 Indonesia -->
+        <activity android:name=".IndonesiaKelas1Activity" android:exported="false" />
+        <activity android:name=".IndonesiaKelas2Activity" android:exported="false" />
+        <activity android:name=".IndonesiaKelas3Activity" android:exported="false" />
+        <activity android:name=".IndonesiaKelas4Activity" android:exported="false" />
+
+        <!-- 🧭 Menu Drawer Tambahan -->
+        <activity android:name=".TargetActivity" android:exported="false" />
+        <activity android:name=".PengingatActivity" android:exported="false" />
+        <activity android:name=".ProfileActivity" android:exported="false" />
+
     </application>
 
 </manifest>

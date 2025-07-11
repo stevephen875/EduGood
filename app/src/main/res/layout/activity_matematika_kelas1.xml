@@ -30,7 +30,7 @@
             android:id="@+id/btn_materi1"
             android:layout_width="250dp"
             android:layout_height="60dp"
-            android:text="Materi 1"
+            android:text="Materi_1"
             android:background="#E0E0E0"
             android:textStyle="bold"/>
 
@@ -38,7 +38,7 @@
             android:id="@+id/btn_materi2"
             android:layout_width="250dp"
             android:layout_height="60dp"
-            android:text="Materi 2"
+            android:text="Materi_2"
             android:layout_marginTop="8dp"
             android:background="#E0E0E0"
             android:textStyle="bold"/>
@@ -47,7 +47,7 @@
             android:id="@+id/btn_materi3"
             android:layout_width="250dp"
             android:layout_height="60dp"
-            android:text="Materi 3"
+            android:text="Materi_3"
             android:layout_marginTop="8dp"
             android:background="#E0E0E0"
             android:textStyle="bold"/>
@@ -56,7 +56,7 @@
             android:id="@+id/btn_final_test"
             android:layout_width="250dp"
             android:layout_height="60dp"
-            android:text="Final Test"
+            android:text="Final_Test"
             android:layout_marginTop="8dp"
             android:background="#E0E0E0"
             android:textStyle="bold"/>

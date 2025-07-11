@@ -1,5 +1,4 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
     <group android:checkableBehavior="none">
         <item android:id="@+id/nav_mandarin" android:title="Mandarin" />
         <item android:id="@+id/nav_matematika" android:title="Matematika" />

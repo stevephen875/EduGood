@@ -30,7 +30,9 @@
             android:hint="Nama"
             android:layout_marginTop="12dp"
             android:background="#EEEEEE"
-            android:padding="12dp" />
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
 
         <EditText
             android:id="@+id/etEmail"
@@ -40,7 +42,9 @@
             android:inputType="textEmailAddress"
             android:layout_marginTop="12dp"
             android:background="#EEEEEE"
-            android:padding="12dp" />
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
 
         <EditText
             android:id="@+id/etPhone"
@@ -50,7 +54,9 @@
             android:inputType="phone"
             android:layout_marginTop="12dp"
             android:background="#EEEEEE"
-            android:padding="12dp" />
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
 
         <EditText
             android:id="@+id/etPassword"
@@ -60,7 +66,9 @@
             android:inputType="textPassword"
             android:layout_marginTop="12dp"
             android:background="#EEEEEE"
-            android:padding="12dp" />
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
 
         <EditText
             android:id="@+id/etConfirmPassword"
@@ -70,7 +78,9 @@
             android:inputType="textPassword"
             android:layout_marginTop="12dp"
             android:background="#EEEEEE"
-            android:padding="12dp" />
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
 
         <Spinner
             android:id="@+id/spinnerKelas"
@@ -78,7 +88,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:background="#EEEEEE"
-            android:padding="12dp" />
+            android:padding="12dp"
+            android:textColor="@color/black"/>
 
         <Button
             android:id="@+id/btnDaftar"
@@ -87,13 +98,14 @@
             android:text="DAFTAR SEKARANG"
             android:layout_marginTop="12dp"
             android:background="@drawable/rounded_button"
-            android:textColor="#000000" />
+            android:textColor="@color/white"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sudah Punya Akun?"
-            android:layout_marginTop="8dp" />
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"/>
 
         <Button
             android:id="@+id/btnMasukSekarang"
@@ -102,6 +114,6 @@
             android:text="MASUK SEKARANG"
             android:layout_marginTop="8dp"
             android:background="@drawable/rounded_button"
-            android:textColor="#000000" />
+            android:textColor="@color/white" />
     </LinearLayout>
 </ScrollView>
