@@ -26,6 +26,8 @@
                 android:background="?attr/colorPrimary"
                 android:elevation="4dp"
                 android:title="Dashboard"
+                app:title="EduGood"
+                app:titleTextColor="@android:color/white"
                 android:titleTextColor="@android:color/white"
                 app:navigationIcon="@android:drawable/ic_menu_sort_by_size"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />

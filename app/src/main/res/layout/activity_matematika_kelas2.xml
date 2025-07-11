@@ -1,17 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:background="#FFFFFF"
-    android:padding="24dp">
+    android:background="@android:color/white">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        app:title="EduGood"
+        app:titleTextColor="@android:color/white"
+        android:titleTextColor="@android:color/white"
+        app:navigationIcon="@android:drawable/ic_menu_sort_by_size"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Materi Matematika - Kelas 2"
-        android:textSize="24sp"
-        android:textColor="#000000"
-        android:textStyle="bold" />
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btn_materi1"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="Materi 1"
+            android:background="#E0E0E0"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_materi2"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="Materi 2"
+            android:layout_marginTop="8dp"
+            android:background="#E0E0E0"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_materi3"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="Materi 3"
+            android:layout_marginTop="8dp"
+            android:background="#E0E0E0"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_final_test"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="Final Test"
+            android:layout_marginTop="8dp"
+            android:background="#E0E0E0"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
 </LinearLayout>
