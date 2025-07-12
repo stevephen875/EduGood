@@ -5,12 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.google.android.material.appbar.AppBarLayout
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-
-    </com.google.android.material.appbar.AppBarLayout>
+        android:background="#6200EE"
+        app:title="EduGood"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="@android:drawable/ic_menu_sort_by_size"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -25,12 +29,11 @@
             android:padding="24dp"
             android:gravity="center_horizontal">
 
-
             <TextView
                 android:id="@+id/tv_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Materi 1: Penjumlahan"
+                android:text="Materi 2: Pengurangan"
                 android:textSize="26sp"
                 android:textStyle="bold"
                 android:textColor="@color/black"
@@ -44,25 +47,39 @@
                 android:layout_marginBottom="24dp">
 
                 <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
                     android:src="@drawable/apel"
-                    android:contentDescription="apel 1" />
+                    android:contentDescription="apel1" />
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/apel"
+                    android:contentDescription="apel2" />
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/apel"
+                    android:contentDescription="apel3" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"
+                    android:text="  -  "
+                    android:textSize="24dp"
                     android:textStyle="bold"
-                    android:text="  +  "
-                    android:textSize="24sp"
-                    android:layout_gravity="center_vertical"/>
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"/>
 
                 <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
                     android:src="@drawable/apel"
-                    android:contentDescription="apel 2" />
+                    android:contentDescription="apel dikurang" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -74,16 +91,16 @@
                     android:layout_gravity="center_vertical"/>
 
                 <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
                     android:src="@drawable/apel"
-                    android:contentDescription="jawaban 1" />
+                    android:contentDescription="apel1" />
 
                 <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
                     android:src="@drawable/apel"
-                    android:contentDescription="jawaban 2" />
+                    android:contentDescription="apel2" />
             </LinearLayout>
 
             <TextView
@@ -94,10 +111,10 @@
                 android:lineSpacingExtra="8dp"
                 android:textColor="#000000"
                 android:textAlignment="center"
-                android:text="Lihat gambar di atas, ya!\nKita punya satu apel \nDitambah satu apel lagi \n\nSekarang, kita punya dua apel! \n\nItu namanya penjumlahan.\n1 + 1 = 2 " />
+                android:text="Kita punya 3 apel 🍎🍎🍎\nLalu kita makan 1 apel 🍎\nSekarang, sisa 2 apel 🍎🍎\n\nItu namanya pengurangan!\n3 - 1 = 2" />
 
             <Button
-                android:id="@+id/btn_quiz"
+                android:id="@+id/btn_quiz2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Latihan Soal"
@@ -108,17 +125,6 @@
                 android:backgroundTint="#6200EE"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp" />
-
         </LinearLayout>
     </ScrollView>
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#6200EE"
-        app:title="EduGood"
-        app:titleTextColor="@android:color/white"
-        app:navigationIcon="@android:drawable/ic_menu_sort_by_size"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

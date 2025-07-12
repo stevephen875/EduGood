@@ -19,6 +19,17 @@
         app:navigationIcon="@android:drawable/ic_menu_sort_by_size"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
+    <TextView
+        android:id="@+id/tv_mapel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Matematika"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,10 +37,12 @@
         android:gravity="center"
         android:padding="16dp">
 
+
         <Button
             android:id="@+id/btn_materi1"
             android:layout_width="250dp"
             android:layout_height="60dp"
+            android:layout_marginTop="20dp"
             android:text="Materi_1"
             android:background="#E0E0E0"
             android:textStyle="bold"/>

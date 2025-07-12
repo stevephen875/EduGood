@@ -5,12 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.google.android.material.appbar.AppBarLayout
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-
-    </com.google.android.material.appbar.AppBarLayout>
+        android:background="#6200EE"
+        app:title="EduGood"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="@android:drawable/ic_menu_sort_by_size"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -25,12 +28,10 @@
             android:padding="24dp"
             android:gravity="center_horizontal">
 
-
             <TextView
-                android:id="@+id/tv_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Materi 1: Penjumlahan"
+                android:text="Materi 3: Menghitung Banyak Benda"
                 android:textSize="26sp"
                 android:textStyle="bold"
                 android:textColor="@color/black"
@@ -46,58 +47,35 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/apel"
-                    android:contentDescription="apel 1" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:text="  +  "
-                    android:textSize="24sp"
-                    android:layout_gravity="center_vertical"/>
+                    android:src="@drawable/apel" />
 
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/apel"
-                    android:contentDescription="apel 2" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:text="  =  "
-                    android:textSize="24sp"
-                    android:layout_gravity="center_vertical"/>
+                    android:src="@drawable/apel" />
 
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/apel"
-                    android:contentDescription="jawaban 1" />
+                    android:src="@drawable/apel" />
 
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/apel"
-                    android:contentDescription="jawaban 2" />
+                    android:src="@drawable/apel" />
             </LinearLayout>
 
             <TextView
-                android:id="@+id/tv_story"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:lineSpacingExtra="8dp"
                 android:textColor="#000000"
                 android:textAlignment="center"
-                android:text="Lihat gambar di atas, ya!\nKita punya satu apel \nDitambah satu apel lagi \n\nSekarang, kita punya dua apel! \n\nItu namanya penjumlahan.\n1 + 1 = 2 " />
+                android:text="Lihat apel di atas ya 🍎\nKita hitung bersama...\n1.. 2.. 3.. 4!\n\nAda 4 apel di atas meja.\nHebat! Kamu pintar menghitung!" />
 
             <Button
-                android:id="@+id/btn_quiz"
+                android:id="@+id/btn_quiz3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Latihan Soal"
@@ -108,17 +86,6 @@
                 android:backgroundTint="#6200EE"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp" />
-
         </LinearLayout>
     </ScrollView>
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#6200EE"
-        app:title="EduGood"
-        app:titleTextColor="@android:color/white"
-        app:navigationIcon="@android:drawable/ic_menu_sort_by_size"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
