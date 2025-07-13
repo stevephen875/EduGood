@@ -8,6 +8,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EduGood">
         <activity
+            android:name=".Mandarin1Materi1Activity"
+            android:exported="false" />
+        <activity
             android:name=".Indonesia1FinalTestActivity"
             android:exported="false" />
         <activity
