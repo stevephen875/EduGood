@@ -8,7 +8,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EduGood">
         <activity
+<<<<<<< Updated upstream
             android:name=".Mandarin1Materi1Activity"
+=======
+            android:name=".Matematika2Materi1Activity"
+>>>>>>> Stashed changes
             android:exported="false" />
         <activity
             android:name=".Indonesia1FinalTestActivity"

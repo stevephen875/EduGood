@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#6200EE"
+        app:title="EduGood"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="@android:drawable/ic_menu_sort_by_size" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="#FFFFFF"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Materi 1: Penjumlahan Dua Angka"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="24dp" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/permen"
+                android:contentDescription="Permen"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kita punya 23 permen 🍬\nLalu ditambah 14 permen lagi 🍬\n\nBerapa jumlah semuanya?\n\nKita jumlahkan:\n23 + 14 = 37\n\nJadi, ada 37 permen!"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:lineSpacingExtra="8dp"/>
+
+            <Button
+                android:id="@+id/btn_quiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latihan Soal"
+                android:textAllCaps="false"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="#6200EE"
+                android:textColor="#FFFFFF"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
