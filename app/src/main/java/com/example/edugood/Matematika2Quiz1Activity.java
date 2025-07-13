@@ -34,7 +34,7 @@ public class Matematika2Quiz1Activity extends AppCompatActivity {
         btnC.setOnClickListener(v -> cekJawaban("C"));
 
         btnKembali.setOnClickListener(v -> {
-            Intent intent = new Intent(this, Matematika2Materi1Activity.class);
+            Intent intent = new Intent(this, MatematikaKelas2Activity.class);
             startActivity(intent);
             finish();
         });

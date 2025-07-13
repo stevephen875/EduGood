@@ -28,7 +28,7 @@ public class Matematika2Materi1Activity extends AppCompatActivity {
 
         btnQuiz = findViewById(R.id.btn_quiz);
         btnQuiz.setOnClickListener(v -> {
-            Intent intent = new Intent(this, Matematika2Materi1Activity.class);
+            Intent intent = new Intent(this, Matematika2Quiz1Activity.class);
             startActivity(intent);
         });
     }
