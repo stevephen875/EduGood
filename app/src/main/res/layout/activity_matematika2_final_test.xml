@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#6200EE"
+        app:title="Final Test Kelas 2"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="@android:drawable/ic_menu_sort_by_size" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:padding="24dp"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. 23 + 14 = ?"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <RadioGroup android:id="@+id/rg_soal1" android:orientation="vertical"
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RadioButton android:id="@+id/s1_a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A. 37" />
+                <RadioButton android:id="@+id/s1_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="B. 36" />
+                <RadioButton android:id="@+id/s1_c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="C. 33" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. 45 - 12 = ?"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp"/>
+
+            <RadioGroup
+                android:id="@+id/rg_soal2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/s2_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A. 30" />
+
+                <RadioButton
+                    android:id="@+id/s2_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B. 33" />
+
+                <RadioButton
+                    android:id="@+id/s2_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C. 28" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. 30 + 40 = ?"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp"/>
+
+            <RadioGroup android:id="@+id/rg_soal3" android:orientation="vertical"
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RadioButton android:id="@+id/s3_a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A. 60" />
+                <RadioButton android:id="@+id/s3_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="B. 70" />
+                <RadioButton android:id="@+id/s3_c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="C. 80" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_cek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Periksa Jawaban"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="#6200EE"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18sp"
+                android:textColor="#4CAF50"
+                android:layout_marginTop="16dp"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btn_kembali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kembali ke Kelas"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#03A9F4"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
