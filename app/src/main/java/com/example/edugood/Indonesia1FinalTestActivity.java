@@ -126,29 +126,5 @@ public class Indonesia1FinalTestActivity extends AppCompatActivity {
 
         tvResult.setVisibility(View.VISIBLE);
     }
-<<<<<<< Updated upstream
 
- */
-    private void showHasilAkhir() {
-        int nilaiPersen = (int) Math.round((double) score / soalList.length * 100);
-
-        tvSoal.setText("Tes selesai!\nNilai kamu: " + nilaiPersen);
-        btnA.setVisibility(View.GONE);
-        btnB.setVisibility(View.GONE);
-        btnC.setVisibility(View.GONE);
-        btnNext.setVisibility(View.GONE);
-        btnKembali.setVisibility(View.VISIBLE);
-
-        if (nilaiPersen >= 99) {
-            tvResult.setText("Luar biasa! 💯");
-        } else if (nilaiPersen >= 66) {
-            tvResult.setText("Bagus! 👍");
-        } else {
-            tvResult.setText("Ayo belajar lagi! ✏️");
-        }
-
-        tvResult.setVisibility(View.VISIBLE);
-    }
-=======
->>>>>>> Stashed changes
 }
