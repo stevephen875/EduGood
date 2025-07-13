@@ -15,7 +15,7 @@ public class Matematika1Materi2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_materi1_matematika_kelas1);
+        setContentView(R.layout.activity_matematika1_materi2);
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -24,9 +24,9 @@ public class Matematika1Materi2Activity extends AppCompatActivity {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
-        btnQuiz = findViewById(R.id.btn_quiz);
+        btnQuiz = findViewById(R.id.btn_quiz2);
         btnQuiz.setOnClickListener(v -> {
-            Intent intent = new Intent(Matematika1Materi2Activity.this, Matematika1Quiz2Activity.class);
+            Intent intent = new Intent(this, Matematika1Quiz2Activity.class);
             startActivity(intent);
 
         });
