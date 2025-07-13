@@ -22,7 +22,6 @@ public class Indonesia1FinalTestActivity extends AppCompatActivity {
             "Soal 3: kalimat yang benar dibawah ini adalah = ?"
     };
 
-
     private final String[][] pilihan = {
             {"A. Buku", "B. Kursi", "C. Meja"},
             {"A. Y", "B. C", "C. A"},
@@ -106,17 +105,28 @@ public class Indonesia1FinalTestActivity extends AppCompatActivity {
         btnB.setEnabled(status);
         btnC.setEnabled(status);
     }
-/*
+
     private void showHasilAkhir() {
-        tvSoal.setText("Tes selesai!\nNilai kamu: " + score + " dari 3");
+        int nilaiPersen = (int) Math.round((double) score / soalList.length * 100);
+
+        tvSoal.setText("Tes selesai!\nNilai kamu: " + nilaiPersen);
         btnA.setVisibility(View.GONE);
         btnB.setVisibility(View.GONE);
         btnC.setVisibility(View.GONE);
         btnNext.setVisibility(View.GONE);
         btnKembali.setVisibility(View.VISIBLE);
-        tvResult.setText("Kamu hebat! 🔥");
+
+        if (nilaiPersen >= 99) {
+            tvResult.setText("Luar biasa! 💯");
+        } else if (nilaiPersen >= 66) {
+            tvResult.setText("Bagus! 👍");
+        } else {
+            tvResult.setText("Ayo belajar lagi! ✏️");
+        }
+
         tvResult.setVisibility(View.VISIBLE);
     }
+<<<<<<< Updated upstream
 
  */
     private void showHasilAkhir() {
@@ -139,4 +149,6 @@ public class Indonesia1FinalTestActivity extends AppCompatActivity {
 
         tvResult.setVisibility(View.VISIBLE);
     }
+=======
+>>>>>>> Stashed changes
 }

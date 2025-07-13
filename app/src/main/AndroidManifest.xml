@@ -25,9 +25,7 @@
         <activity
             android:name=".Matematika2Quiz1Activity"
             android:exported="false" />
-        <activity
-            android:name=".Mandarin1Materi1Activity"
-            android:exported="false" />
+
         <activity
             android:name=".Matematika2Materi1Activity"
             android:exported="false" />
