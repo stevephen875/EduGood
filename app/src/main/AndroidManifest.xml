@@ -11,6 +11,9 @@
             android:name=".Indonesia1FinalTestActivity"
             android:exported="false" />
         <activity
+            android:name=".Quiz3indonesia1Activity"
+            android:exported="false" />
+        <activity
             android:name=".Indonesia1Materi3Activity"
             android:exported="false" />
         <activity
@@ -39,7 +42,7 @@
             android:exported="false" />
         <activity
             android:name=".Matematika1Materi2Activity"
-            android:exported="false" /> <!-- 🌟 Launcher -->
+            android:exported="false" />
         <activity
             android:name=".SplashActivity"
             android:exported="true">
@@ -48,19 +51,19 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- 🏠 Dashboard -->
+        </activity>
         <activity
             android:name=".Dashboard"
-            android:exported="false" /> <!-- 🔐 Autentikasi -->
+            android:exported="false" />
         <activity
             android:name=".login"
             android:exported="false" />
         <activity
             android:name=".register"
-            android:exported="false" /> <!-- 📄 Landing Page -->
+            android:exported="false" />
         <activity
             android:name=".LandingPage"
-            android:exported="false" /> <!-- 📘 Matematika -->
+            android:exported="false" />
         <activity
             android:name=".MatematikaKelas1Activity"
             android:exported="false" />

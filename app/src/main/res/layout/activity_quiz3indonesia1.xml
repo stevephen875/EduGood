@@ -59,6 +59,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="A. Ayah pergi kerja"
+                android:textStyle="bold"
+                android:textColorHint="@color/black"
                 android:backgroundTint="#E0E0E0"
                 android:textColor="#000000"
                 android:layout_marginBottom="12dp"/>
@@ -67,6 +69,8 @@
                 android:id="@+id/btn_b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColorHint="@color/black"
                 android:text="B. Ayah kerja pergi"
                 android:backgroundTint="#E0E0E0"
                 android:textColor="#000000"
@@ -78,6 +82,8 @@
                 android:layout_height="wrap_content"
                 android:text="C. kerja pergi ayah"
                 android:backgroundTint="#E0E0E0"
+                android:textStyle="bold"
+                android:textColorHint="@color/black"
                 android:textColor="#000000"
                 android:layout_marginBottom="24dp"/>
 
