@@ -120,7 +120,6 @@ public class Indonesia1FinalTestActivity extends AppCompatActivity {
 
  */
     private void showHasilAkhir() {
-        // Hitung nilai dalam persentase (0-100)
         int nilaiPersen = (int) Math.round((double) score / soalList.length * 100);
 
         tvSoal.setText("Tes selesai!\nNilai kamu: " + nilaiPersen);
@@ -130,7 +129,6 @@ public class Indonesia1FinalTestActivity extends AppCompatActivity {
         btnNext.setVisibility(View.GONE);
         btnKembali.setVisibility(View.VISIBLE);
 
-        // Berikan feedback berdasarkan nilai
         if (nilaiPersen >= 99) {
             tvResult.setText("Luar biasa! 💯");
         } else if (nilaiPersen >= 66) {
