@@ -8,11 +8,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EduGood">
         <activity
-<<<<<<< Updated upstream
+            android:name=".Matematika2FinalTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Matematika2Quiz3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Matematika2Materi3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Matematika2Quiz2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Matematika2Materi2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Matematika2Quiz1Activity"
+            android:exported="false" />
+        <activity
             android:name=".Mandarin1Materi1Activity"
-=======
+            android:exported="false" />
+        <activity
             android:name=".Matematika2Materi1Activity"
->>>>>>> Stashed changes
             android:exported="false" />
         <activity
             android:name=".Indonesia1FinalTestActivity"
