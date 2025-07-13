@@ -119,26 +119,26 @@ public class Indonesia1FinalTestActivity extends AppCompatActivity {
     }
 
  */
-private void showHasilAkhir() {
-    // Hitung nilai dalam persentase (0-100)
-    int nilaiPersen = (int) Math.round((double) score / soalList.length * 100);
+    private void showHasilAkhir() {
+        // Hitung nilai dalam persentase (0-100)
+        int nilaiPersen = (int) Math.round((double) score / soalList.length * 100);
 
-    tvSoal.setText("Tes selesai!\nNilai kamu: " + nilaiPersen);
-    btnA.setVisibility(View.GONE);
-    btnB.setVisibility(View.GONE);
-    btnC.setVisibility(View.GONE);
-    btnNext.setVisibility(View.GONE);
-    btnKembali.setVisibility(View.VISIBLE);
+        tvSoal.setText("Tes selesai!\nNilai kamu: " + nilaiPersen);
+        btnA.setVisibility(View.GONE);
+        btnB.setVisibility(View.GONE);
+        btnC.setVisibility(View.GONE);
+        btnNext.setVisibility(View.GONE);
+        btnKembali.setVisibility(View.VISIBLE);
 
-    // Berikan feedback berdasarkan nilai
-    if (nilaiPersen >= 99) {
-        tvResult.setText("Luar biasa! 💯");
-    } else if (nilaiPersen >= 66) {
-        tvResult.setText("Bagus! 👍");
-    } else {
-        tvResult.setText("Ayo belajar lagi! ✏️");
+        // Berikan feedback berdasarkan nilai
+        if (nilaiPersen >= 99) {
+            tvResult.setText("Luar biasa! 💯");
+        } else if (nilaiPersen >= 66) {
+            tvResult.setText("Bagus! 👍");
+        } else {
+            tvResult.setText("Ayo belajar lagi! ✏️");
+        }
+
+        tvResult.setVisibility(View.VISIBLE);
     }
-
-    tvResult.setVisibility(View.VISIBLE);
-}
 }
