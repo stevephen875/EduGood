@@ -64,7 +64,7 @@ public class Indonesia1FinalTestActivity extends AppCompatActivity {
         });
 
         btnKembali.setOnClickListener(v -> {
-            startActivity(new Intent(this, MatematikaKelas1Activity.class));
+            startActivity(new Intent(this, IndonesiaKelas1Activity.class));
             finish();
         });
     }

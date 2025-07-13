@@ -17,7 +17,7 @@ public class IndonesiaKelas1Activity extends AppCompatActivity {
         btnMateri1 = findViewById(R.id.btn_materi1);
         btnMateri2 = findViewById(R.id.btn_materi2);
         btnMateri3 = findViewById(R.id.btn_materi3);
-        btnFinalTest = findViewById(R.id.btn_final_test); // ✅ ini
+        btnFinalTest = findViewById(R.id.btn_final_test);
 
         btnMateri1.setOnClickListener(v -> {
             Intent intent = new Intent(IndonesiaKelas1Activity.this, Indonesia1Materi1Activity.class);

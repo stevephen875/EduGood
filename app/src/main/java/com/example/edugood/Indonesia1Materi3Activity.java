@@ -15,7 +15,7 @@ public class Indonesia1Materi3Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_indonesia1_materi3);
+        setContentView(R.layout.activity_indonesia1_materi2);
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

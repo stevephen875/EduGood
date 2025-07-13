@@ -15,7 +15,7 @@ public class Matematika1Quiz2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_matematika_quiz1_kelas1);
+        setContentView(R.layout.activity_matematika1_quiz2);
 
         btnA = findViewById(R.id.btn_a);
         btnB = findViewById(R.id.btn_b);
@@ -28,7 +28,7 @@ public class Matematika1Quiz2Activity extends AppCompatActivity {
         btnC.setOnClickListener(v -> cekJawaban("C"));
 
         btnBack.setOnClickListener(v -> {
-            Intent intent = new Intent(this, MatematikaKelas1Activity.class);
+            Intent intent = new Intent(this, MatematikaKelas2Activity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             startActivity(intent);
             finish();
