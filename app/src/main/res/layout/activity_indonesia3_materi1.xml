@@ -30,7 +30,7 @@
                 android:id="@+id/tv_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Materi 2: Mengenali kata kerja"
+                android:text="Materi 1: Jenis-Jenis kalimat(Pernyataan, Tanya, Perintah)"
                 android:textSize="26sp"
                 android:textStyle="bold"
                 android:textColor="@color/black"
@@ -47,7 +47,54 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:text=" Kata kerja adalah kata yang menyatakan aktivitas atau tindakan. "
+                    android:text="Kalimat Pernyataan: Berisi informasi, diakhiri titik. "
+                    android:textSize="24sp"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Kalimat Tanya: Mengandung kata tanya (apa, siapa, kapan, dll), diakhiri tanda tanya."
+                    android:textSize="24sp"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Kalimat Perintah: Mengajak atau menyuruh, diakhiri tanda seru."
+                    android:textSize="24sp"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Jenis kalimat pernyataan: Saya suka membaca buku. "
                     android:textSize="24sp"
                     android:textAlignment="center"/>
 
@@ -63,7 +110,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:text="Contoh kata kerja: Makan, Menulis, berlari, menyanyi"
+                    android:text="Jenis kalimat Tanya: Apa yang kamu baca? "
+                    android:textSize="24sp"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Jenis kalimat perintah: Tolong bukakan pintu itu! "
                     android:textSize="24sp"
                     android:textAlignment="center"/>
 
