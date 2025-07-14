@@ -8,6 +8,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EduGood">
         <activity
+            android:name=".Indonesia4FinalTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Indonesia4Quiz3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Indonesia4Materi3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Indonesia4Quiz2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Indonesia4Materi2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Indonesia4Quiz1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Indonesia4Materi1Activity"
+            android:exported="false" />
+        <activity
             android:name=".Indonesia3FinalTestActivity"
             android:exported="false" />
         <activity
