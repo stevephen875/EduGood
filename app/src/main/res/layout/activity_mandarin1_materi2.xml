@@ -60,7 +60,7 @@
                 android:lineSpacingExtra="8dp"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:text="👨 Ayah = 爸爸 (Bàba)\n"/>
+                android:text="Ayah = 爸爸 (Bàba)\n"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -68,7 +68,7 @@
                 android:lineSpacingExtra="8dp"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:text="👩 Ibu = 妈妈 (Māma)\n"/>
+                android:text="Ibu = 妈妈 (Māma)\n"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -76,7 +76,7 @@
                 android:lineSpacingExtra="8dp"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:text="👧 Kakak perempuan = 姐姐 (Jiějie)\n"/>
+                android:text="Kakak perempuan = 姐姐 (Jiějie)\n"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -84,7 +84,7 @@
                 android:lineSpacingExtra="8dp"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:text="👦 Kakak laki-laki = 哥哥 (Gēge)\n"/>
+                android:text="Kakak laki-laki = 哥哥 (Gēge)\n"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -92,15 +92,7 @@
                 android:lineSpacingExtra="8dp"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:text= "👶 Adik = 弟弟 (Dìdi) / 妹妹 (Mèimei)\n\n"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:lineSpacingExtra="8dp"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:text="Keluarga disebut 家庭 (Jiātíng) ❤" />
+                android:text= "Adik = 弟弟 (Dìdi) / 妹妹 (Mèimei)\n\n"/>
 
             <Button
                 android:id="@+id/btn_quiz"
