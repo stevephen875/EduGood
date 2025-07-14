@@ -8,6 +8,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EduGood">
         <activity
+            android:name=".Matematika4Quiz1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Matematika4Materi1Activity"
+            android:exported="false" />
+        <activity
             android:name=".Matematika3FinalTesActivity"
             android:exported="false" />
         <activity

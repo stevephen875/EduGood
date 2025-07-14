@@ -12,24 +12,7 @@ import androidx.appcompat.widget.Toolbar;
 public class Matematika3Quiz1Activity extends AppCompatActivity {
 
     private TextView tvSoal, tvResult;
-    private Button btnA, btnB, btnC, btnNext, btnKembali;
-
-    private int soalIndex = 0;
-    private int score = 0;
-
-    private final String[] soalList = {
-            "Soal 1: 100 + 200 = ?",
-            "Soal 2: 150 + 150 = ?",
-            "Soal 3: 300 + 100 = ?"
-    };
-
-    private final String[][] pilihan = {
-            {"A. 200", "B. 300", "C. 400"},
-            {"A. 250", "B. 300", "C. 350"},
-            {"A. 400", "B. 350", "C. 450"}
-    };
-
-    private final String[] jawabanBenar = {"B", "B", "A"};
+    private Button btnA, btnB, btnC, btnKembali;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +21,8 @@ public class Matematika3Quiz1Activity extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        if (getSupportActionBar() != null) getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        if (getSupportActionBar() != null)
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         toolbar.setNavigationOnClickListener(v -> finish());
 
         tvSoal = findViewById(R.id.tv_soal);
@@ -46,23 +30,17 @@ public class Matematika3Quiz1Activity extends AppCompatActivity {
         btnA = findViewById(R.id.btn_a);
         btnB = findViewById(R.id.btn_b);
         btnC = findViewById(R.id.btn_c);
-        btnNext = findViewById(R.id.btn_next);
         btnKembali = findViewById(R.id.btn_kembali);
 
-        setSoal();
+        tvSoal.setText("Soal: 235 + 120 = ?");
+
+        btnA.setText("A. 345");
+        btnB.setText("B. 355");
+        btnC.setText("C. 365");
 
         btnA.setOnClickListener(v -> cekJawaban("A"));
         btnB.setOnClickListener(v -> cekJawaban("B"));
         btnC.setOnClickListener(v -> cekJawaban("C"));
-
-        btnNext.setOnClickListener(v -> {
-            soalIndex++;
-            if (soalIndex < soalList.length) {
-                setSoal();
-            } else {
-                showHasilAkhir();
-            }
-        });
 
         btnKembali.setOnClickListener(v -> {
             startActivity(new Intent(this, MatematikaKelas3Activity.class));
@@ -70,54 +48,18 @@ public class Matematika3Quiz1Activity extends AppCompatActivity {
         });
     }
 
-    private void setSoal() {
-        tvSoal.setText(soalList[soalIndex]);
-        btnA.setText(pilihan[soalIndex][0]);
-        btnB.setText(pilihan[soalIndex][1]);
-        btnC.setText(pilihan[soalIndex][2]);
-        tvResult.setVisibility(View.GONE);
-        btnNext.setVisibility(View.GONE);
-        btnKembali.setVisibility(View.GONE);
-        enableButtons(true);
-    }
-
     private void cekJawaban(String pilihan) {
-        String hasil;
-        int warna;
+        boolean benar = pilihan.equals("C");
 
-        if (pilihan.equals(jawabanBenar[soalIndex])) {
-            hasil = "Benar! 🎉";
-            warna = getResources().getColor(android.R.color.holo_green_dark);
-            score++;
-        } else {
-            hasil = "Salah 😢";
-            warna = getResources().getColor(android.R.color.holo_red_dark);
-        }
+        tvResult.setText(benar ? "Benar! 🎉" : "Salah 😢");
+        tvResult.setTextColor(getResources().getColor(
+                benar ? android.R.color.holo_green_dark : android.R.color.holo_red_dark
+        ));
 
-        tvResult.setText(hasil);
-        tvResult.setTextColor(warna);
         tvResult.setVisibility(View.VISIBLE);
-        btnNext.setVisibility(View.VISIBLE);
-        enableButtons(false);
-    }
-
-    private void showHasilAkhir() {
-        int nilai = (int) ((score / (float) soalList.length) * 100);
-        tvSoal.setText("Quiz selesai!\nNilai kamu: " + nilai);
-        tvResult.setText(nilai >= 80 ? "Bagus sekali! 👏" : "Yuk belajar lagi ya!");
-        tvResult.setTextColor(getResources().getColor(android.R.color.holo_blue_dark));
-        tvResult.setVisibility(View.VISIBLE);
-
-        btnA.setVisibility(View.GONE);
-        btnB.setVisibility(View.GONE);
-        btnC.setVisibility(View.GONE);
-        btnNext.setVisibility(View.GONE);
         btnKembali.setVisibility(View.VISIBLE);
-    }
-
-    private void enableButtons(boolean status) {
-        btnA.setEnabled(status);
-        btnB.setEnabled(status);
-        btnC.setEnabled(status);
+        btnA.setEnabled(false);
+        btnB.setEnabled(false);
+        btnC.setEnabled(false);
     }
 }

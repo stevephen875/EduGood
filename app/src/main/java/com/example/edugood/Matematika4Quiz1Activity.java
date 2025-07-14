@@ -5,11 +5,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class Matematika3Quiz2Activity extends AppCompatActivity {
+public class Matematika4Quiz1Activity extends AppCompatActivity {
 
     private TextView tvSoal, tvResult;
     private Button btnA, btnB, btnC, btnKembali;
@@ -17,7 +16,7 @@ public class Matematika3Quiz2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_matematika3_quiz2);
+        setContentView(R.layout.activity_matematika4_quiz1);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -32,18 +31,18 @@ public class Matematika3Quiz2Activity extends AppCompatActivity {
         btnC = findViewById(R.id.btn_c);
         btnKembali = findViewById(R.id.btn_kembali);
 
-        tvSoal.setText("Soal: 425 - 120 = ?");
+        tvSoal.setText("Soal: 2 × 3 = ?");
 
-        btnA.setText("A. 305");
-        btnB.setText("B. 315");
-        btnC.setText("C. 320");
+        btnA.setText("A. 5");
+        btnB.setText("B. 6");
+        btnC.setText("C. 9");
 
         btnA.setOnClickListener(v -> cekJawaban("A"));
         btnB.setOnClickListener(v -> cekJawaban("B"));
         btnC.setOnClickListener(v -> cekJawaban("C"));
 
         btnKembali.setOnClickListener(v -> {
-            startActivity(new Intent(this, MatematikaKelas3Activity.class));
+            startActivity(new Intent(this, MatematikaKelas4Activity.class));
             finish();
         });
     }

@@ -12,24 +12,7 @@ import androidx.appcompat.widget.Toolbar;
 public class Matematika3Quiz3Activity extends AppCompatActivity {
 
     private TextView tvSoal, tvResult;
-    private Button btnA, btnB, btnC, btnNext, btnKembali;
-
-    private int soalIndex = 0;
-    private int score = 0;
-
-    private final String[] soalList = {
-            "Soal 1: 200 + 30 = ?",
-            "Soal 2: 100 + 40 = ?",
-            "Soal 3: 300 + 50 = ?"
-    };
-
-    private final String[][] pilihan = {
-            {"A. 220", "B. 230", "C. 240"},
-            {"A. 150", "B. 130", "C. 140"},
-            {"A. 350", "B. 330", "C. 340"}
-    };
-
-    private final String[] jawabanBenar = {"B", "C", "A"};
+    private Button btnA, btnB, btnC, btnKembali;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,23 +30,17 @@ public class Matematika3Quiz3Activity extends AppCompatActivity {
         btnA = findViewById(R.id.btn_a);
         btnB = findViewById(R.id.btn_b);
         btnC = findViewById(R.id.btn_c);
-        btnNext = findViewById(R.id.btn_next);
         btnKembali = findViewById(R.id.btn_kembali);
 
-        setSoal();
+        tvSoal.setText("Soal: Nilai tempat ratusan dari angka 381 adalah?");
+
+        btnA.setText("A. 80");
+        btnB.setText("B. 300");
+        btnC.setText("C. 1");
 
         btnA.setOnClickListener(v -> cekJawaban("A"));
         btnB.setOnClickListener(v -> cekJawaban("B"));
         btnC.setOnClickListener(v -> cekJawaban("C"));
-
-        btnNext.setOnClickListener(v -> {
-            soalIndex++;
-            if (soalIndex < soalList.length) {
-                setSoal();
-            } else {
-                showHasilAkhir();
-            }
-        });
 
         btnKembali.setOnClickListener(v -> {
             startActivity(new Intent(this, MatematikaKelas3Activity.class));
@@ -71,20 +48,8 @@ public class Matematika3Quiz3Activity extends AppCompatActivity {
         });
     }
 
-    private void setSoal() {
-        tvSoal.setText(soalList[soalIndex]);
-        btnA.setText(pilihan[soalIndex][0]);
-        btnB.setText(pilihan[soalIndex][1]);
-        btnC.setText(pilihan[soalIndex][2]);
-        tvResult.setVisibility(View.GONE);
-        btnNext.setVisibility(View.GONE);
-        btnKembali.setVisibility(View.GONE);
-        enableButtons(true);
-    }
-
     private void cekJawaban(String pilihan) {
-        boolean benar = pilihan.equals(jawabanBenar[soalIndex]);
-        if (benar) score++;
+        boolean benar = pilihan.equals("B");
 
         tvResult.setText(benar ? "Benar! 🎉" : "Salah 😢");
         tvResult.setTextColor(getResources().getColor(
@@ -92,27 +57,9 @@ public class Matematika3Quiz3Activity extends AppCompatActivity {
         ));
 
         tvResult.setVisibility(View.VISIBLE);
-        btnNext.setVisibility(View.VISIBLE);
-        enableButtons(false);
-    }
-
-    private void showHasilAkhir() {
-        int nilai = (int) ((score / (float) soalList.length) * 100);
-        tvSoal.setText("Quiz selesai!\nNilai kamu: " + nilai);
-        tvResult.setText(nilai >= 80 ? "Hebat! 🔥" : "Semangat lagi ya 💪");
-        tvResult.setTextColor(getResources().getColor(android.R.color.holo_blue_dark));
-        tvResult.setVisibility(View.VISIBLE);
-
-        btnA.setVisibility(View.GONE);
-        btnB.setVisibility(View.GONE);
-        btnC.setVisibility(View.GONE);
-        btnNext.setVisibility(View.GONE);
         btnKembali.setVisibility(View.VISIBLE);
-    }
-
-    private void enableButtons(boolean status) {
-        btnA.setEnabled(status);
-        btnB.setEnabled(status);
-        btnC.setEnabled(status);
+        btnA.setEnabled(false);
+        btnB.setEnabled(false);
+        btnC.setEnabled(false);
     }
 }
