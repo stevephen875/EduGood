@@ -8,6 +8,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EduGood">
         <activity
+            android:name=".Matematika3FinalTesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Matematika3Quiz3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Matematika3Materi3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Matematika3Materi2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Matematika3Quiz2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Matematika3Quiz1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Matematika3Materi1Activity"
+            android:exported="false" />
+        <activity
             android:name=".Indonesia3FinalTestActivity"
             android:exported="false" />
         <activity
