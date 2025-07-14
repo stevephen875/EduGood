@@ -15,7 +15,7 @@ public class Matematika1Materi1Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_materi1_matematika_kelas1);
+        setContentView(R.layout.activity_matematika1_materi1);
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

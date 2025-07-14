@@ -15,7 +15,7 @@ public class Matematika1Quiz1Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_matematika_quiz1_kelas1);
+        setContentView(R.layout.activity_matematika1_quiz1);
 
         btnA = findViewById(R.id.btn_a);
         btnB = findViewById(R.id.btn_b);
