@@ -7,7 +7,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class Indonesia1Materi3Activity extends AppCompatActivity {
+public class Indonesia4Materi2Activity extends AppCompatActivity {
 
     private Toolbar toolbar;
     private Button btnQuiz;
@@ -15,7 +15,7 @@ public class Indonesia1Materi3Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_indonesia1_materi3);
+        setContentView(R.layout.activity_indonesia4_materi2);
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -26,7 +26,7 @@ public class Indonesia1Materi3Activity extends AppCompatActivity {
 
         btnQuiz = findViewById(R.id.btn_quiz);
         btnQuiz.setOnClickListener(v -> {
-            Intent intent = new Intent(Indonesia1Materi3Activity.this, Quiz3indonesia1Activity.class);
+            Intent intent = new Intent(Indonesia4Materi2Activity.this, Indonesia4Quiz2Activity.class);
             startActivity(intent);
 
         });
