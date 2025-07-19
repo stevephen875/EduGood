@@ -23,5 +23,16 @@ public class MandarinKelas1Activity extends AppCompatActivity {
             Intent intent = new Intent(MandarinKelas1Activity.this, Mandarin1Materi1Activity.class);
             startActivity(intent);
         });
+
+        btnMateri2.setOnClickListener(v -> {
+            Intent intent = new Intent(MandarinKelas1Activity.this, Mandarin1Materi2Activity.class);
+            startActivity(intent);
+        });
+
+        btnMateri3.setOnClickListener(v -> {
+            Intent intent = new Intent(MandarinKelas1Activity.this, Mandarin1Materi3Activity.class);
+            startActivity(intent);
+        });
+        
     }
 }

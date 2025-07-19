@@ -8,7 +8,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class Mandarin1Quiz2Activity extends AppCompatActivity {
+public class Mandarin1Quiz3Activity extends AppCompatActivity {
 
     private TextView tvSoal, tvResult;
     private Button btnA, btnB, btnC, btnKembali;
@@ -18,7 +18,7 @@ public class Mandarin1Quiz2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mandarin1_quiz2);
+        setContentView(R.layout.activity_mandarin1_quiz3);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -34,11 +34,11 @@ public class Mandarin1Quiz2Activity extends AppCompatActivity {
         btnC = findViewById(R.id.btn_c);
         btnKembali = findViewById(R.id.btn_kembali);
 
-        tvSoal.setText("Apa arti dari mama dalam Bahasa Mandarin?");
+        tvSoal.setText("哥哥 pinyin nya adalah = ?");
 
-        btnA.setText("A. 妈妈");
-        btnB.setText("B. 爸爸");
-        btnC.setText("C. 妹妹");
+        btnA.setText("A. Gēge");
+        btnB.setText("B. Mèimei");
+        btnC.setText("C. Dìdi");
 
         btnA.setOnClickListener(v -> cekJawaban("A"));
         btnB.setOnClickListener(v -> cekJawaban("B"));

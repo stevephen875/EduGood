@@ -7,7 +7,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class Mandarin1Materi2Activity extends AppCompatActivity {
+public class Mandarin1Materi3Activity extends AppCompatActivity {
 
     private Toolbar toolbar;
     private Button btnQuiz;
@@ -15,7 +15,7 @@ public class Mandarin1Materi2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mandarin1_materi2);
+        setContentView(R.layout.activity_mandarin1_materi3);
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -26,7 +26,7 @@ public class Mandarin1Materi2Activity extends AppCompatActivity {
 
         btnQuiz = findViewById(R.id.btn_quiz);
         btnQuiz.setOnClickListener(v -> {
-            Intent intent = new Intent(Mandarin1Materi2Activity.this, Mandarin1Quiz2Activity.class);
+            Intent intent = new Intent(Mandarin1Materi3Activity.this, Mandarin1Quiz3Activity.class);
             startActivity(intent);
 
         });

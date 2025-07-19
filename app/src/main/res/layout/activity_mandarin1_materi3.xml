@@ -38,7 +38,7 @@
                 android:id="@+id/tv_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Materi 2: Keluarga"
+                android:text="Materi 3: Keluarga"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:textColor="#000000"
@@ -60,7 +60,7 @@
                 android:lineSpacingExtra="8dp"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:text="Ayah = 爸爸"/>
+                android:text="Ayah = 爸爸 (Bàba)\n"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -68,7 +68,7 @@
                 android:lineSpacingExtra="8dp"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:text="Ibu = 妈妈"/>
+                android:text="Ibu = 妈妈 (Māma)\n"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -76,7 +76,7 @@
                 android:lineSpacingExtra="8dp"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:text="Kakak perempuan = 姐姐"/>
+                android:text="Kakak perempuan = 姐姐 (Jiějie)\n"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -84,7 +84,7 @@
                 android:lineSpacingExtra="8dp"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:text="Kakak laki-laki = 哥哥"/>
+                android:text="Kakak laki-laki = 哥哥 (Gēge)\n"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -92,7 +92,8 @@
                 android:lineSpacingExtra="8dp"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:text= "Adik perempuan = 妹妹"/>
+                android:text= "Adik perempuan = 妹妹 (Mèimei)\n"/>
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -101,8 +102,7 @@
                 android:lineSpacingExtra="8dp"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:text= "Adik = 弟弟"/>
-
+                android:text= "Adik laki-laki = 弟弟 (Dìdi)\n"/>
 
             <Button
                 android:id="@+id/btn_quiz"

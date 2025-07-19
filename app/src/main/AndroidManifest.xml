@@ -8,6 +8,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EduGood">
         <activity
+            android:name=".Mandarin1Materi3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Mandarin1Quiz3Activity"
+            android:exported="false" />
+        <activity
             android:name=".Mandarin1Quiz2Activity"
             android:exported="false" />
         <activity

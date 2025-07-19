@@ -17,7 +17,6 @@ public class Mandarin1Quiz1Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mandarin1_quiz1);
 
-
         btnA = findViewById(R.id.btn_a);
         btnB = findViewById(R.id.btn_b);
         btnC = findViewById(R.id.btn_c);

@@ -26,7 +26,7 @@ public class Mandarin1Materi1Activity extends AppCompatActivity {
 
         btnQuiz = findViewById(R.id.btn_quiz);
         btnQuiz.setOnClickListener(v -> {
-            Intent intent = new Intent(this, Mandarin1Quiz1Activity.class);
+            Intent intent = new Intent(Mandarin1Materi1Activity.this, Mandarin1Quiz1Activity.class);
             startActivity(intent);
 
         });
