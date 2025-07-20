@@ -34,5 +34,8 @@ public class MandarinKelas2Activity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        btnFinalTest.setOnClickListener(v -> {
+            startActivity(new Intent(this, Mandarin2FinalTestActivity.class));
+        });
     }
 }
