@@ -8,6 +8,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EduGood">
         <activity
+            android:name=".Mandarin4Quiz1Activity"
+            android:exported="false" />
+        <activity
+        android:name=".Mandarin4Quiz2Activity"
+        android:exported="false" />
+        <activity
+            android:name=".Mandarin4Quiz3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Mandarin4Materi3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Mandarin4Materi2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Mandarin4Materi1Activity"
+            android:exported="false" />
+        <activity
             android:name=".Mandarin3Quiz3Activity"
             android:exported="false" />
         <activity
