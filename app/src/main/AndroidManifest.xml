@@ -8,6 +8,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EduGood">
         <activity
+            android:name=".Mandarin3FinalTestActivity"
+            android:exported="false" />
+        <activity
             android:name=".Mandarin4FinalTestActivity"
             android:exported="false" />
         <activity
